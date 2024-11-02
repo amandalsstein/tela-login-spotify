@@ -4,7 +4,7 @@
 Paleta de cores 
 Verde botão #1DD05D
 Preto escuro #040404
-Preto claro #121212
+Preto claro #1A1A1A
 Cinza #E8E8E8
 */
 
@@ -17,7 +17,8 @@ Cinza #E8E8E8
 }
 
 body, html {
-    background-color: #121212;
+    background-color: #1A1A1A;
+    background-image: linear-gradient(to top, #040404, #1A1A1A);
     color: white;
     height: 100vh;
     width: 100vw;
@@ -36,22 +37,25 @@ section#login {
     transform: translate(-50%, -50%);
 
     background-color: #040404;
-    width: 300px;
+    width: 310px;
     height: 550px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px #121212d5;
+    box-shadow: 0px 0px 10px #040404;
+
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
     background-image: url(../imagens/background.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 200px;
 }
 
 section#login > div#formulario {
     display: block;
-    padding: 10px;
+    padding: 15px;
 }
